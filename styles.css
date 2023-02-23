@@ -1,0 +1,47 @@
+body{
+    overflow: hidden;
+}
+
+
+#main_art{
+    height: 100vh;
+    width:10vw;
+    padding: none;
+    margin: 0ems;
+}
+.image_container{
+    position: fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+}
+.Log_in_prompt_container{
+    top: 30vh;
+}
+.Log_in_prompt{
+    align-items: center;
+}
+
+.inputboxes > *{
+    margin:none;
+    border:none;
+    border:1px solid rgba(0,0,0,.1);
+    border-radius: 4px;
+    background-color: #fcfcfb;
+    padding: 20px 10px 8px;
+    width:18%;
+    height:30px;
+
+}
+.Actual_username{
+    align-items: center;
+    position: relative;
+    top:40vh;
+    left:12vw;
+}
+.Actual_password{
+    align-items: center;
+    position: relative;
+    top:50vh;
+    left:12vw;
+}
