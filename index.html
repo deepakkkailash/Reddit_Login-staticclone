@@ -6,21 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reddit-Login DK edition</title>
     <link rel="icon" href="https://www.iconpacks.net/icons/2/free-reddit-logo-icon-2436-thumb.png">
-    <link rel="stylesheet" href="styles.css"
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <main>
-        <span class="Log_in_prompt_container"><h2 class="Log_in_prompt">Log in</h2></span>
         <div class="image_container"><img id="main_art" src="https://www.redditstatic.com/accountmanager/bbb584033aa89e39bad69436c504c9bd.png" alt="Art"></div>
-        <span class="Log_in_prompt_userpolicy">By continuing, you agree to our <a href="#"> User Agreement </a> and  <a href='#'>Privacy Policy</a></span>.
-       
-        <form>
-            <div class="inputboxes">
-             <input class="Actual_username" type= "text" placeholder="username">
-             <br>
-             <input class="Actual_password" type="pass" placeholder="password">
+        <div class="content">
+            <span class="Login_titles">
+                <span class="Log_in_prompt_container"><h2 class="Log_in_prompt">Log in</h2>
+                <span class="Log_in_prompt_userpolicy">By continuing, you agree to our <a href="https://www.redditinc.com/policies/user-agreement"> User Agreement </a> and  <a href='https://www.reddit.com/policies/privacy-policy'>Privacy Policy</a></span>
+            </span>
+            </span>
+            <div class="Easy_Login">
+                <button type="button" class="Google"><img id="Google_favicon" src="https://seeklogo.com/images/N/new-google-favicon-logo-5E38E037AF-seeklogo.com.png" alt="Google favicon"/> <span class="Google_content">Continue with Google</span></button>
+                <br/>
+                <br/>
+                <button type="button" class="Apple"><span class="Apple_content"> <img id="Apple_favicon" src="https://freepngimg.com/save/25358-apple-logo-transparent-image/444x506" alt="Apple favicon"/> Continue with Apple</span></button>
             </div>
-        </form>
+            <div class="Divider">
+                <span class="Dividerline"></span><span class="Divider_content">OR</span><span class="Dividerline"></span>
+            </div>          
+            <form>
+                <div class="inputboxes">
+                 <input class="Actual_username" type= "text" placeholder="username">
+                 <input class="Actual_password" type="pass" placeholder="password">
+                </div>
+                <button class="Submit_details" type="Submit" onclick=Hello>Log in</button>  
+            </form>
+            <div class="Forget_username_prompt">
+                <p>Forgot your <a href="https://www.reddit.com/username">username </a> or <a href="https://www.reddit.com/password">password</a></p>
+            </div>
+            <div class="Signup_prompt">
+                <p>New to reddit? <a href="https://www.reddit.com/account/register/">Sign up</a></p>
+            </div>
+        </div>
+        
+        
+    
     </main>
 
 
