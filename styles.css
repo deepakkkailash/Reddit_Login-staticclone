@@ -2,6 +2,9 @@ body{
     overflow: hidden;
 }
 
+*{
+    box-sizing: border-box;
+}
 a{
     text-decoration: none;
     color: #0079d3;
@@ -9,10 +12,6 @@ a{
 
 a:hover{
     opacity:0.5;
-}
-
-.content{
-    width:280px;
 }
 
 
@@ -27,7 +26,7 @@ a:hover{
     top:0px;
     bottom:0px;
     left:0px;
-    box-sizing: border-box;
+  
 }
 
 .Login_titles > *{
@@ -35,7 +34,7 @@ a:hover{
     font-family: Noto Sans,sans-serif;
     font-size: 12px;
     padding-left: 30vw;
-    box-sizing: border-box;
+
     
 }
 .Log_in_prompt_container{
@@ -63,7 +62,7 @@ a:hover{
     height:5vh;
     background: white;
     top:1vh;
-    box-sizing: border-box;
+ 
 }
 
 .Google:hover{
@@ -89,7 +88,7 @@ a:hover{
     height:5vh;
     background: white;
     top:3vh;
-    box-sizing: border-box;
+
 }
 #Apple_favicon{
     width:35px;
@@ -114,7 +113,7 @@ a:hover{
     position: absolute;
     top:55vh;
     left:12vw;
-    box-sizing: border-box;
+
 }
 
 
@@ -143,7 +142,7 @@ a:hover{
     top:60vh;
     left:12vw;
     margin:none;
-    box-sizing: border-box;
+
 }
 .inputboxes > *{
     position: relative;
@@ -163,7 +162,7 @@ a:hover{
     margin-bottom: 12px;
     align-items: center;
     position: relative;
-    box-sizing: border-box;
+
 
 }
 
@@ -178,7 +177,7 @@ a:hover{
     margin-bottom: 12px;
     align-items: center;
     position: relative;
-    box-sizing: border-box;
+
  
 } 
 
@@ -186,7 +185,7 @@ a:hover{
     opacity:0.8;
 }
 .Button_to_submit{
-    box-sizing: border-box;
+
     position: absolute;
     top:78vh;
     left:12vw;
@@ -240,5 +239,3 @@ a:hover{
 #sign-up_link:hover{
     opacity:0.7;
 }
-
-
