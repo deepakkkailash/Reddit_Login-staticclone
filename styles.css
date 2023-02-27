@@ -2,6 +2,16 @@ body{
     overflow: hidden;
 }
 
+a{
+    text-decoration: none;
+    color: #0079d3;
+}
+
+a:hover{
+    opacity:0.5;
+}
+
+
 
 #main_art{
     height: 100vh;
@@ -14,6 +24,16 @@ body{
     top:0px;
     bottom:0px;
     left:0px;
+    box-sizing: border-box;
+}
+
+.Login_titles > *{
+    position: relative;
+    font-family: Noto Sans,sans-serif;
+    font-size: 12px;
+    padding-left: 30vw;
+    box-sizing: border-box;
+    
 }
 .Log_in_prompt_container{
     position: relative;
@@ -25,70 +45,33 @@ body{
     text-decoration: none;
 }
 
-.Log_in_prompt_userpolicy{
-
-}
-.inputboxes > *{
-    position: relative;
-    margin:none;
-    border:none;
-    border:1px solid rgba(0,0,0,.1);
-    border-radius: 2px;
-    background-color: #fcfcfb;
-    padding: 12px 8px 10px;
-    width:18%;
-    height:30px;
-}
-
-
-.Login_titles > *{
-    position: relative;
-    font-family: Noto Sans,sans-serif;
-    font-size: 12px;
-    padding-left: 30vw;
-    
-}
-
-.Submit_details{
-    position: absolute;
-    margin-left: 15vw;
-    margin-top: 80vh;
-    border-radius: 12px;
-    width: 350px;
-    color:white;
-    border:0vh;
-    text-decoration: solid;
-    background: #0079d3;
-    padding: 12px 12px 12px 12px;
-    top:20px;
-    left:10px;
-
-}
-
 .Easy_Login{
-    position:relative;
-    top:30vh;
-    left:15vw;
+    position:absolute;
+    top:35vh;
+    left: 12vw;
 }
-
 
 .Google{
     position: relative;
+    margin: none;
     border-radius: 20px;
     border-width: 0.4px;
-   
-    width:25vw;
+    width:18vw;
     height:5vh;
     background: white;
- 
     top:1vh;
+    box-sizing: border-box;
+}
+
+.Google:hover{
+    opacity: 0.4;
+    border-color: #0079d3;
 }
 #Google_favicon{
     width: 18px;
-    padding-right:40px;
+    float:left;
 }
 .Google_content{
-    padding-right:20px;
     font-size: 15px;
     font-style: normal;
     font-family: "Google Sans",arial,sans-serif;
@@ -96,16 +79,18 @@ body{
 }
 .Apple{
     position: relative;
+    margin:none;
     border-radius: 20px;
     border-width: 0.4px;
-    width:25vw;
+    width:18vw;
     height:5vh;
     background: white;
     top:3vh;
+    box-sizing: border-box;
 }
 #Apple_favicon{
-    width:18px;
-    padding-right: 40px;
+    width:35px;
+    float:left;
 }
 
 .Apple_content{
@@ -115,33 +100,18 @@ body{
     color: 3c4043;
 
 }
-a{
-    text-decoration: none;
-    color: 0079d3;
-}
-.Actual_username{
-    left: 18vw;
-    top: 40vh;
-    width:25vw;
-    align-items: center;
-    position: relative;
 
+.Apple:hover{
+    opacity: 0.4;
+    border-color: #0079d3;
 }
-.Actual_password{
-    top:50vh;
-    right:1vw;
-    width:25vw;
-    align-items: center;
-    position: relative;
- 
-} 
-
 .Divider{
     position: absolute;
-    top:500px;
-    left:250px;
+    top:55vh;
+    left:20vw;
+    box-sizing: border-box;
 }
-.Dividerline{
+.divider-line{
     display:inline;
     border-top: 1px solid #edeff1;
     border-top-width: 1px;
@@ -149,13 +119,118 @@ a{
     border-top-color: rgb(237, 239, 241);
     width:40%;
 }
+.Divider_content{
+    display: inline;
+    position: relative;
+    top:8px;
+    font-family: IBMPlexSans,sans-serif;
+    font-size:14px;
+    color:#878a8c;
+    font-weight: 500;
+    line-height:18px;
+}
+
+.inputboxes{
+    position: absolute;
+    top:60vh;
+    left:12vw;
+    margin:none;
+    box-sizing: border-box;
+}
+.inputboxes > *{
+    position: relative;
+    display: block;
+    margin:none;
+    border:none;
+    border:1px solid rgba(0,0,0,.1);
+    border-radius: 4px;
+    background-color: #fcfcfb;
+    padding: 12px 8px 10px;
+    height:50px;
+    cursor:pointer;
+}
+
+.Actual_username{
+    width:160%;
+    margin-bottom: 12px;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+
+}
+
+.Actual_username:hover{
+    opacity:0.7;
+}
+
+
+
+.Actual_password{
+    width:160%;
+    margin-bottom: 12px;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+ 
+} 
+
+.Actual_password:hover{
+    opacity:0.8;
+}
+.Button_to_submit{
+    box-sizing: border-box;
+    position: absolute;
+    top:78vh;
+    left:12vw;
+}
+.Submit_details{
+    position: absolute;
+    margin:none;
+    border-radius: 8px;
+    width: 300px;
+    color:white;
+    border:0vh;
+    font-size:14px;
+    letter-spacing:.5px;
+    text-overflow: ellipsis;
+    font-weight:600;
+    background: #0079d3;
+    padding: 12px 12px 12px 12px;
+    cursor:pointer;
+
+}
+
+.Submit_details:hover {
+    background-color: #0079d3;
+	opacity: 0.8;
+}
+
 .Forget_username_prompt{
     position: absolute;
     top:86vh;
-    left:20vw;
+    left:12vw;
+    font-size:14px;
+    letter-spacing: 0.5px;
+    float:left;
 }
 .Signup_prompt{
     position: absolute;
+    
+    font-size:14px;
+    color:#1a1a1b;
     top:92vh;
-    left:20vw;
+    left:12vw;
+    float:left;
 }
+#sign-up_link{
+    font-size: 12px;
+   
+    font-weight: 400;
+    text-decoration: solid;
+}
+
+#sign-up_link:hover{
+    opacity:0.7;
+}
+
+
